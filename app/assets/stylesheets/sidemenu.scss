@@ -1,0 +1,22 @@
+#side-menu{
+  border-right: 1px solid #e7eaec;
+  height: 100%;
+  padding-top: 20px;
+
+  ul{
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+  
+    li{
+      padding: 20px 10px;
+      text-align: center;
+      text-transform: uppercase;
+    }
+
+    a{
+      text-decoration: none; 
+    }
+
+  }
+}

@@ -1,0 +1,86 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+ @import "bootstrap-sprockets";
+ @import "bootstrap";
+ @import "sidemenu";
+ @import "normalise";
+
+ html,body{
+  font-family: "open sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  height: 100%;
+  padding-top: 28px;
+}
+
+.display-table{
+  display: table;
+  height: 100%;
+  width: 100%;
+}
+
+.display-table-row{
+  display: table-row;
+  height: 100%;
+}
+
+.display-table-cell{
+  display: table-cell;
+  float: none;
+  height: 100%;
+}
+
+.navbar-default{
+  background-color: #FFF;
+}
+
+.top_vertical{
+  vertical-align: top;
+}
+
+#nav-header{
+
+  ul{
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    color: #676a6c;
+
+    #header-search-field{
+      border-top: none; 
+      border-left: none; 
+      border-right: none;
+      border-bottom: 1px solid black;
+      width: 150px;
+      outline: none;
+    }
+
+    li{
+      float: left;
+      margin-left: 15px;
+      padding: 17px 10px;
+    }
+
+    .glyphicon{
+      color: #676a6c;
+      font-size: 20px;
+    }
+
+    a{
+      text-decoration: none; 
+    }
+  }
+}
+

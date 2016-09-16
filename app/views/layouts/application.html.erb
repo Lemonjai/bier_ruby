@@ -9,6 +9,56 @@
   </head>
 
   <body>
-    <%= yield %>
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-12">
+            <header id="nav-header" class="clearfix">
+              <a class="navbar-brand" href="#">Brand</a>
+              <ul class="pull-right">
+                <li>
+                  <span class="glyphicon glyphicon-search hidden-sm hidden-xs" aria-hidden="true"></span>
+                  <input type="text" id="header-search-field" class="hidden-sm hidden-xs" placeholder="Search for something...">
+                </li>
+
+                <li class="fixed-width">
+                  <a href="#">
+                    <span class="glyphicon glyphicon-heart-empty" aria-hidden="true"></span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="logout">
+                    <span class="glyphicon glyphicon-user" aria-hidden="true"></span>
+                  </a>
+                </li>
+                <li class="fixed-width">
+                  <a href="#">
+                    <span class="glyphicon glyphicon-envelope bg_icon" aria-hidden="true"></span>
+                  </a>
+                </li>
+              </ul>
+            </header>
+          </div>
+        </div>
+      </div>
+    </nav>
+    
+    <div class="display-table">
+      <div class="row display-table-row">
+        <div class="col-md-2 col-sm-1 hidden-xs display-table-cell" id="side-menu">
+          <ul>
+            <li><a href="#">Beer</a></li>
+            <li><a href="#">Wine</a></li>
+            <li><a href="#">Brands</a></li>
+            <li><a href="#">Find Your Fit</a></li>
+            <li><a href="#">Trends</a></li>
+          </ul>
+          
+        </div>
+        <div class="col-md-10 col-sm-11 display-table-cell">
+          <%= yield %>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
