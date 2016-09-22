@@ -1,6 +1,8 @@
 Rails.application.routes.draw do
-  devise_for :users
+  resources :wines
   resources :beers
+  devise_for :users
+  
 
   root 'main#index'
 

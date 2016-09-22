@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @wine.title %>
+</p>
+
+<p>
+  <strong>Beertype:</strong>
+  <%= @wine.beerType %>
+</p>
+
+<p>
+  <strong>Brewery:</strong>
+  <%= @wine.brewery %>
+</p>
+
+<p>
+  <strong>Color:</strong>
+  <%= @wine.color %>
+</p>
+
+<p>
+  <strong>Food:</strong>
+  <%= @wine.food %>
+</p>
+
+<p>
+  <strong>Occassion:</strong>
+  <%= @wine.occassion %>
+</p>
+
+<p>
+  <strong>Rating:</strong>
+  <%= @wine.rating %>
+</p>
+
+<%= link_to 'Edit', edit_wine_path(@wine) %> |
+<%= link_to 'Back', wines_path %>
