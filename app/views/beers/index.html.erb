@@ -2,6 +2,8 @@
 
 <h1>Beers</h1>
 
+<% if current_user.try(:beeradmin?) && current_user.try(:admin?) %>
+
 <table>
   <thead>
     <tr>
@@ -37,3 +39,9 @@
 <br>
 
 <%= link_to 'New Beer', new_beer_path %>
+
+<% else %>
+
+<p> Only Beer can be shown </p>
+
+<% end %>
