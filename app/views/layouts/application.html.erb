@@ -27,9 +27,13 @@
                   </a>
                 </li>
                 <li>
-                  <a href="#" class="logout">
-                    <span class="glyphicon glyphicon-user" aria-hidden="true"></span>
-                  </a>
+                  <% if signed_in? %>
+                    <a href="#" class="logout"><%= link_to raw('<span class="glyphicon glyphicon-off" aria-hidden="true"></span>'), destroy_user_session_path, :method => :delete %>
+                    </a>
+                  <% else %>
+                    <a href="#" class="logout"><%= link_to raw('<span class="glyphicon glyphicon-user" aria-hidden="true"></span>'), new_user_session_path %>
+                    </a>
+                  <% end %>
                 </li>
                 <li class="fixed-width">
                   <a href="#">
