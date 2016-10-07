@@ -51,7 +51,7 @@
         <div class="col-md-2 col-sm-1 hidden-xs display-table-cell" id="side-menu">
           <% if current_user.try(:admin?) %>
             <ul>
-              <li class="link active"><%= link_to raw('<span class="glyphicon glyphicon-th" aria-hidden="true"></span> Dashboard'), root_path %>
+              <li class="link active"><%= link_to raw('<span class="glyphicon glyphicon-th" aria-hidden="true"></span> Dashboard'), dashboard_index_path %>
               </li>
               
               <% if current_user.try(:beeradmin)%>
