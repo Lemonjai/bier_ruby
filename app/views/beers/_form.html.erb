@@ -27,6 +27,18 @@
   </div>
 
   <div class="field">
+    <%= f.collection_select :colour_id, Colour.all, :id, :colour, {prompt: "Choose a colour "} %>
+  </div>
+
+  <div class="field">
+    <%= f.collection_select :food_id, Food.all, :id, :food, {prompt: "Choose a type of food"} %>
+  </div>
+
+  <div class="field">
+    <%= f.collection_select :occassion_id, Occassion.all, :id, :occassion, {prompt: "Choose an occassion"} %>
+  </div>
+
+  <div class="field">
     <%= f.label :rating %>
     <%= f.number_field :rating %>
   </div>
