@@ -1,0 +1,27 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Occassions</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Occassion</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @occassions.each do |occassion| %>
+      <tr>
+        <td><%= occassion.occassion %></td>
+        <td><%= link_to 'Show', occassion %></td>
+        <td><%= link_to 'Edit', edit_occassion_path(occassion) %></td>
+        <td><%= link_to 'Destroy', occassion, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Occassion', new_occassion_path %>

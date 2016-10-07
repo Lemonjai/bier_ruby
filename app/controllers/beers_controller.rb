@@ -25,6 +25,7 @@ class BeersController < ApplicationController
   # POST /beers.json
   def create
     @beer = Beer.new(beer_params)
+    @beer.user_id = current_user.id
 
     respond_to do |format|
       if @beer.save
@@ -69,6 +70,6 @@ class BeersController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def beer_params
-      params.require(:beer).permit(:title, :beerType, :brewery, {color:[]}, {food:[]}, {occassion:[]}, :rating)
+      params.require(:beer).permit(:title, :beerType, :brewery, {color:[]}, {food:[]}, {occassion:[]}, :rating, :user_id)
     end
 end

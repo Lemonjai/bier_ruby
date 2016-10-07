@@ -1,0 +1,22 @@
+<%= form_for(occassion) do |f| %>
+  <% if occassion.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(occassion.errors.count, "error") %> prohibited this occassion from being saved:</h2>
+
+      <ul>
+      <% occassion.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :occassion %>
+    <%= f.text_field :occassion %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
