@@ -46,17 +46,32 @@
         </div>
       </div>
     </nav>
-    
     <div class="display-table">
       <div class="row display-table-row">
         <div class="col-md-2 col-sm-1 hidden-xs display-table-cell" id="side-menu">
-          <ul>
-            <li><%= link_to "Beer", beers_path%></li>
-            <li><%= link_to "Wine", wines_path%></li>
-            <li><a href="#">Brands</a></li>
-            <li><a href="#">Find Your Fit</a></li>
-            <li><a href="#">Trends</a></li>
-          </ul>
+          <% if current_user.try(:admin?) %>
+            <ul>
+              <li class="link active"><%= link_to raw('<span class="glyphicon glyphicon-th" aria-hidden="true"></span> Dashboard'), root_path %>
+              </li>
+
+              <li class="link active"><%= link_to raw('<span class="glyphicon glyphicon-list-alt" aria-hidden="true"></span> Articles'), root_path %>
+              </li>
+
+              <li class="link active"><%= link_to raw('<span class="glyphicon glyphicon-list-alt" aria-hidden="true"></span> Categories'), root_path %>
+              </li>
+
+              <li class="link active"><%= link_to raw('<span class="glyphicon glyphicon-cog" aria-hidden="true"></span> Settings'), root_path %>
+              </li>
+            </ul>
+          <% else %>
+            <ul>
+              <li><%= link_to "Beer", beers_path%></li>
+              <li><%= link_to "Wine", wines_path%></li>
+              <li><a href="#">Brands</a></li>
+              <li><a href="#">Find Your Fit</a></li>
+              <li><a href="#">Trends</a></li>
+            </ul>
+          <% end %>
           
         </div>
         <div class="col-md-10 col-sm-11 display-table-cell">
