@@ -27,33 +27,6 @@
   </div>
 
   <div class="field">
-    <%= label_tag 'color_red', 'Red' %>
-    <%= check_box_tag 'beer[color][]', 'Red', checked('Red'), id: 'color_red' %>
-
-    <%= label_tag 'color_blue', 'Blue' %>
-    <%= check_box_tag 'beer[color][]', 'Blue', checked('Blue'), id: 'color_blue' %>
-
-    <%= label_tag 'color_green', 'Green' %>
-    <%= check_box_tag 'beer[color][]', 'Green', checked('Green'), id: 'color_green' %>
-  </div>
-
-  <div class="field">
-    <%= label_tag 'food_party', 'Party' %>
-    <%= check_box_tag 'beer[food][]', 'Party', checked('Party'), id: 'food_party' %>
-
-    <%= label_tag 'food_dinner', 'Dinner' %>
-    <%= check_box_tag 'beer[food][]', 'Dinner', checked('Dinner'), id: 'food_dinner' %>
-
-    <%= label_tag 'food_lunch', 'Lunch' %>
-    <%= check_box_tag 'beer[food][]', 'Lunch', checked('Lunch'), id: 'food_lunch' %>
-  </div>
-
-  <div class="field">
-    <%= label_tag 'occassion_party', 'Party' %>
-    <%= check_box_tag 'beer[occassion][]', 'Party', checked('Party'), id: 'occassion_party' %>
-  </div>
-
-  <div class="field">
     <%= f.label :rating %>
     <%= f.number_field :rating %>
   </div>
