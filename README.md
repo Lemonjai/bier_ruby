@@ -1,5 +1,10 @@
 # README BIER v 1.1
 
+Notes: Oct 7, 2016
+=======================
+1. Fix the styling for the category to show all colour, food & category
+2. 
+
 Notes: Oct 6, 2016
 =======================
 1. Updated the styling of the login
