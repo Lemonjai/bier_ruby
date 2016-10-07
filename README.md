@@ -6,6 +6,8 @@ Notes: Oct 6, 2016
 2. Add validation on devise
 3. Add the dashboard for the posting
 4. Add posting associations for the posting
+5. Add categories and creating associations for the posting + users
+6. Add colours, food and occassion to the category index page
 
 Notes: Sept 19, 2016
 =======================

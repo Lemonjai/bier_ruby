@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'category/index'
+
   resources :colours
   resources :occassions
   resources :foods
