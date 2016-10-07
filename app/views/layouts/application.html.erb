@@ -53,9 +53,14 @@
             <ul>
               <li class="link active"><%= link_to raw('<span class="glyphicon glyphicon-th" aria-hidden="true"></span> Dashboard'), root_path %>
               </li>
-
-              <li class="link active"><%= link_to raw('<span class="glyphicon glyphicon-list-alt" aria-hidden="true"></span> Articles'), root_path %>
-              </li>
+              
+              <% if current_user.try(:beeradmin)%>
+                <li class="link active"><%= link_to raw('<span class="glyphicon glyphicon-list-alt" aria-hidden="true"></span> Articles'), beers_path %>
+                </li>
+              <% else %>
+                <li class="link active"><%= link_to raw('<span class="glyphicon glyphicon-list-alt" aria-hidden="true"></span> Articles'), wines_path %>
+                </li>
+              <% end %>
 
               <li class="link active"><%= link_to raw('<span class="glyphicon glyphicon-list-alt" aria-hidden="true"></span> Categories'), root_path %>
               </li>

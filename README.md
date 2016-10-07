@@ -4,6 +4,8 @@ Notes: Oct 6, 2016
 =======================
 1. Updated the styling of the login
 2. Add validation on devise
+3. Add the dashboard for the posting
+4. 
 
 Notes: Sept 19, 2016
 =======================
