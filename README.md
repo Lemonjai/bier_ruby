@@ -30,3 +30,9 @@ Notes: Sept 13, 2016
 
 
 ** Note everything has been uploaded into heroku service**
+
+"Priority list"
+=======================
+** Need to solved the selection to select multiple selection**
+** Need to figure add picture onto the application**
+** User favourite function **
