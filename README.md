@@ -4,7 +4,7 @@ Notes: Oct 7, 2016
 =======================
 1. Fix the styling for the category to show all colour, food & category
 2. Add the relationship between beer with food, occassion & colour
-3. 
+3. Add the visual for the post and able to add food, occassion and colour
 
 Notes: Oct 6, 2016
 =======================

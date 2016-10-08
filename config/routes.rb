@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :beer_types
   get 'dashboard/index'
 
   get 'category/index'
