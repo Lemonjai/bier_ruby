@@ -1,5 +1,11 @@
 # README BIER v 1.1
 
+Notes: Oct 8, 2016
+=======================
+1. Started on the posting style for the beer
+2. Add the default panel from bootstrap as the style for the posting for the beer
+3. Update the viewport for the mobile to make responsive
+
 Notes: Oct 7, 2016
 =======================
 1. Fix the styling for the category to show all colour, food & category
@@ -37,3 +43,4 @@ Notes: Sept 13, 2016
 ** Need to figure add picture onto the application**
 ** User favourite function **
 ** User email function **
+** Need to add the sidemenu back for the mobile view **
