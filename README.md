@@ -36,3 +36,4 @@ Notes: Sept 13, 2016
 ** Need to solved the selection to select multiple selection**
 ** Need to figure add picture onto the application**
 ** User favourite function **
+** User email function **

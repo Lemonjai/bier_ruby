@@ -6,7 +6,6 @@
 	  <thead>
 	    <tr>
 	      <th>Title</th>
-	      <th>Beertype</th>
 	      <th>Brewery</th>
 	      <th>Colour</th>
 	      <th>Food</th>
@@ -21,7 +20,6 @@
 	    <% @beers.each do |beer| %>
 	      <tr>
 	        <td><%= beer.title %></td>
-	        <td><%= beer.beerType %></td>
 	        <td><%= beer.brewery %></td>
 	        <td><%= beer.colour.colour %></td>
 	        <td><%= beer.food.food %></td>
@@ -40,7 +38,36 @@
 	<%= render 'category/show' %>
 
 <% else %>
+<div class="container">
+	<div class="row">
+		<div class="col-md-4">
+			<div class="panel panel-default">
+			  <div class="panel-heading">Panel heading without title</div>
+			  <div class="panel-body">
+			    Panel content
+			  </div>
+			</div>
+		</div>
 
-	<p> Welcome to Bier </p>
+		<div class="col-md-4">
+			<div class="panel panel-default">
+			  <div class="panel-heading">Panel heading without title</div>
+			  <div class="panel-body">
+			    Panel content
+			  </div>
+			</div>
+		</div>
+
+		<div class="col-md-4">
+			<div class="panel panel-default">
+			  <div class="panel-heading">Panel heading without title</div>
+			  <div class="panel-body">
+			    Panel content
+			  </div>
+			</div>
+		</div>
+	</div>
+</div>
+
 
 <% end %>

@@ -8,7 +8,6 @@
   <thead>
     <tr>
       <th>Title</th>
-      <th>Beertype</th>
       <th>Brewery</th>
       <th>Colour</th>
       <th>Food</th>
@@ -23,7 +22,6 @@
     <% @beers.each do |beer| %>
       <tr>
         <td><%= beer.title %></td>
-        <td><%= beer.beerType %></td>
         <td><%= beer.brewery %></td>
         <td><%= beer.colour.colour %></td>
         <td><%= beer.food.food %></td>

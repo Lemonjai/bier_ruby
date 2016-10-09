@@ -22,10 +22,6 @@
   </div>
 
   <div class="field">
-    
-  </div>
-
-  <div class="field">
     <%= f.label :colour, "Choose colour" %>
     <%= f.collection_select :colour_id, Colour.all, :id, :colour, {prompt: "Choose a colour "} %>
   </div>
